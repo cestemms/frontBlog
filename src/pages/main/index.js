@@ -4,7 +4,7 @@ import Moment from 'react-moment';
 import 'moment/locale/pt-br';
 import'./style.css';
 
-
+//Configuração do Moment para conversão da data e idioma
 Moment.globalFormat = ("DD, MMMM YYYY");
 Moment.glogalLocale =('pt-br');
 
@@ -48,7 +48,7 @@ export default class Main extends Component {
                         <div className="post-list">
                           <h2>{post.title}</h2>
                           <ul className="post-categories">
-                              <Moment fromNow>
+                              <Moment>
                               <li>{post.date}</li>
                               </Moment>
 
